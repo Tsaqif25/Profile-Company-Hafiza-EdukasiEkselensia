@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+       :root {
+      --teal: #0d9488;
+      --teal-light: #14b8a6;
+      --cyan: #06b6d4;
+      --teal-dark: #0f766e;
+      --custom-teal: #0d9488;
+      --gray-50: #f8fafc;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-400: #94a3b8;
+      --gray-500: #64748b;
+      --gray-700: #334155;
+      --gray-900: #0f172a;
+
+      
+    }
+  </style>
+<body class="font-poppins text-cp-black">
+  <!-- ── NAVBAR ── -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-[100] bg-white/97 shadow-[0_1px_20px_rgba(0,0,0,0.08)]">
+  <div class="max-w-[1200px] mx-auto px-6 flex items-center justify-between h-[72px]">
+    
+    <!-- LOGO -->
+    <a href="#hero" class="inline-flex items-center gap-2.5 no-underline">
+      <img src="./Untitled_design__5_-removebg-preview.png" class="h-14 w-auto object-contain block" alt="Logo Hafiza Edukasi">
+      <div class="flex flex-direction flex-col justify-center">
+        <p class="font-['DM_Sans',sans-serif] text-[1.3rem] font-bold text-[var(--gray-900)] leading-[1.1] tracking-[-0.01em]">Hafiza Edukasi</p>
+        <p class="font-['DM_Sans',sans-serif] text-[0.9rem] font-semibold text-[var(--custom-teal)] leading-[1.1] mt-0.5">Ekselensia</p>
+      </div>
+    </a>
+
+    <!-- DESKTOP NAV links -->
+    <div class="hidden md:flex items-center gap-8 class-nav-links">
+      <a href="#hero" class="text-[0.875rem] font-medium no-underline text-[var(--gray-900)] hover:text-[var(--teal-light)] transition-colors duration-200">Beranda</a>
+      <a href="#about" class="text-[0.875rem] font-medium no-underline text-[var(--gray-900)] hover:text-[var(--teal-light)] transition-colors duration-200">Tentang Kami</a>
+
+      <!-- Dropdown Layanan (Desktop) -->
+  <div class="relative group class-nav-dropdown pb-4 mt-4">
+  <a href="#services" class="inline-flex items-center gap-[0.3rem] cursor-pointer text-[0.875rem] font-medium no-underline text-[var(--gray-900)] hover:text-[var(--teal-light)] transition-colors duration-200">
+    Layanan
+    <svg class="w-3.5 h-3.5 fill-none stroke-current stroke-[2.5] transition-transform duration-250 group-hover:rotate-180" viewBox="0 0 24 24">
+      <polyline points="6 9 12 15 18 9"/>
+    </svg>
+  </a>
+  
+  <div class="hidden group-hover:block absolute top-full left-1/2 -translate-x-1/2 pt-4 min-w-[280px] z-[200]">
+    
+    <div class="bg-white border border-[var(--gray-100)] rounded-2xl shadow-[0_16px_48px_rgba(0,0,0,0.12)] p-3">
+      
+      <a href="#services" class="flex items-center gap-3 p-3 rounded-xl no-underline text-[var(--gray-900)] hover:bg-[var(--gray-50)] transition-colors duration-200 block">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-gradient-to-br from-[#0ea5e9] to-[#3b82f6]">
+          <svg class="w-4.5 h-4.5 fill-none stroke-white stroke-2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 012 1.18 2 2 0 014 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14v2.92z"/></svg>
+        </div>
+        <div class="leading-normal">
+          <div class="font-bold text-[0.875rem] text-[var(--gray-900)]">Dream High Course & Consulting</div>
+          <div class="text-[0.75rem] text-[var(--gray-500)] mt-0.5">Pelatihan & konsultasi global</div>
+        </div>
+      </a>
+      
+      <a href="#services" class="flex items-center gap-3 p-3 rounded-xl no-underline text-[var(--gray-900)] hover:bg-[var(--gray-50)] transition-colors duration-200 block">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-gradient-to-br from-[#f59e0b] to-[#f97316]">
+          <svg class="w-4.5 h-4.5 fill-none stroke-white stroke-2" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+        </div>
+        <div class="leading-normal">
+          <div class="font-bold text-[0.875rem] text-[var(--gray-900)]">Nara Excellent Academy</div>
+          <div class="text-[0.75rem] text-[var(--gray-500)] mt-0.5">Bimbingan belajar adaptif</div>
+        </div>
+      </a>
+      
+      <a href="#services" class="flex items-center gap-3 p-3 rounded-xl no-underline text-[var(--gray-900)] hover:bg-[var(--gray-50)] transition-colors duration-200 block">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-gradient-to-br from-[#0d9488] to-[#06b6d4]">
+          <svg class="w-4.5 h-4.5 fill-none stroke-white stroke-2" viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+        </div>
+        <div class="leading-normal">
+          <div class="font-bold text-[0.875rem] text-[var(--gray-900)]">Hafiza Edu Research & Teacher Training</div>
+          <div class="text-[0.75rem] text-[var(--gray-500)] mt-0.5">Riset & pelatihan pendidik</div>
+        </div>
+      </a>
+      
+    </div>
+  </div>
+</div>
+
+      <a href="#contact" class="text-[0.875rem] font-medium no-underline text-[var(--gray-900)] hover:text-[var(--teal-light)] transition-colors duration-200">Kontak</a>
+      <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-br from-[var(--teal-light)] to-[var(--cyan)] text-white font-semibold text-[0.875rem] no-underline shadow-[0_4px_14px_rgba(13,148,136,0.35)] transition-all duration-200 hover:scale-105 hover:shadow-[0_6px_20px_rgba(13,148,136,0.5)]">Hubungi Kami</a>
+    </div>
+
+    <!-- HAMBURGER (Mobile Only) -->
+    <button class="md:hidden flex flex-col gap-[5px] cursor-pointer bg-none border-none p-1 group" id="hamburger" aria-label="Menu">
+      <span class="block w-6 h-0.5 rounded-[2px] bg-[var(--gray-700)] transition-colors duration-300"></span>
+      <span class="block w-6 h-0.5 rounded-[2px] bg-[var(--gray-700)] transition-colors duration-300"></span>
+      <span class="block w-6 h-0.5 rounded-[2px] bg-[var(--gray-700)] transition-colors duration-300"></span>
+    </button>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div class="hidden class-mobile-menu md:!hidden flex-col gap-4 px-8 py-5 bg-white border-t border-[var(--gray-100)] shadow-[0_8px_24px_rgba(0,0,0,0.08)]" id="mobileMenu">
+    <a href="#hero" class="text-[0.9rem] font-medium text-[var(--gray-700)] no-underline py-[0.35rem] transition-colors duration-200 hover:text-[var(--teal)]" onclick="closeMenu()">Beranda</a>
+    <a href="#about" class="text-[0.9rem] font-medium text-[var(--gray-700)] no-underline py-[0.35rem] transition-colors duration-200 hover:text-[var(--teal)]" onclick="closeMenu()">Tentang Kami</a>
+
+    <!-- Mobile Layanan Submenu -->
+    <div>
+      <button class="flex items-center justify-between text-[0.9rem] font-medium text-[var(--gray-700)] py-[0.35rem] cursor-pointer border-none bg-none w-full text-left group class-mobile-submenu-toggle" id="mobileLayananToggle" onclick="toggleMobileSubmenu()">
+        Layanan
+        <svg class="w-4 h-4 fill-none stroke-[var(--gray-500)] stroke-[2.5] transition-transform duration-250 class-chev-icon" viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </button>
+      
+      <div class="hidden flex-col gap-1 pl-4 mt-1 class-mobile-submenu" id="mobileSubmenu">
+        <a href="#services" class="flex items-center gap-2 text-[0.85rem] font-medium text-[var(--gray-600)] py-1.5 border-l-2 border-[var(--gray-200)] pl-3 no-underline hover:text-[var(--teal)] hover:border-[var(--teal-light)]" onclick="closeMenu()">
+          <span class="w-2 h-2 rounded-full inline-block shrink-0 bg-gradient-to-br from-[#0ea5e9] to-[#3b82f6]"></span>
+          Dream High Course & Consulting
+        </a>
+        <a href="#services" class="flex items-center gap-2 text-[0.85rem] font-medium text-[var(--gray-600)] py-1.5 border-l-2 border-[var(--gray-200)] pl-3 no-underline hover:text-[var(--teal)] hover:border-[var(--teal-light)]" onclick="closeMenu()">
+          <span class="w-2 h-2 rounded-full inline-block shrink-0 bg-gradient-to-br from-[#f59e0b] to-[#f97316]"></span>
+          Nara Excellent Academy
+        </a>
+        <a href="#services" class="flex items-center gap-2 text-[0.85rem] font-medium text-[var(--gray-600)] py-1.5 border-l-2 border-[var(--gray-200)] pl-3 no-underline hover:text-[var(--teal)] hover:border-[var(--teal-light)]" onclick="closeMenu()">
+          <span class="w-2 h-2 rounded-full inline-block shrink-0 bg-gradient-to-br from-[#0d9488] to-[#06b6d4]"></span>
+          Hafiza Edu Research & Teacher Training
+        </a>
+      </div>
+    </div>
+
+    <a href="#contact" class="text-[0.9rem] font-medium text-[var(--gray-700)] no-underline py-[0.35rem] transition-colors duration-200 hover:text-[var(--teal)]" onclick="closeMenu()">Kontak</a>
+    <a href="#contact" class="text-center mt-1 px-5 py-2.5 rounded-full bg-gradient-to-br from-[var(--teal-light)] to-[var(--cyan)] text-white font-semibold text-[0.875rem] no-underline shadow-[0_4px_14px_rgba(13,148,136,0.35)] transition-all duration-200 hover:scale-105" onclick="closeMenu()">Hubungi Kami</a>
+  </div>
+</nav>
+<!-- ── SECTION: ARTIKEL PREMIUM EDITORIAL (100% PURIFIED TAILWIND CSS) ── -->
+<div class="bg-white min-h-screen pt-28 pb-24 font-sans selection:bg-teal-500 selection:text-white">
+  
+  <!-- ── INNER CONTAINER HERO HEADER ── -->
+  <header class="max-w-[1140px] mx-auto px-6 lg:px-8 mb-10">
+    <!-- Breadcrumbs Component Premium -->
+    <nav class="flex items-center gap-2.5 mb-8 text-[0.82rem] font-bold uppercase tracking-wider text-slate-400 overflow-hidden whitespace-nowrap">
+      <a href="#" class="hover:text-teal-600 transition-colors duration-200">Beranda</a>
+      <span class="text-slate-300 text-[10px]">/</span>
+      <a href="#" class="hover:text-teal-600 transition-colors duration-200">Artikel</a>
+      <span class="text-slate-300 text-[10px]">/</span>
+      <span class="text-slate-900 truncate font-black">Detail Panduan</span>
+    </nav>
+
+    <!-- Meta Tags, Badge, and Heading Title -->
+    <div class="max-w-[850px]">
+      <div class="flex flex-wrap items-center gap-4 mb-6">
+        <span class="bg-gradient-to-r from-teal-500 to-teal-600 text-white px-3.5 py-1 rounded-full text-[0.72rem] font-black tracking-widest uppercase shadow-sm shadow-teal-500/20">
+          PTE Academic
+        </span>
+        <div class="flex items-center gap-2 text-[0.88rem] text-slate-500 font-semibold">
+          <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <span>28 Mei 2026</span>
+          <span class="text-slate-300">•</span>
+          <span class="text-slate-800 font-bold">Tim Dream High</span>
+        </div>
+      </div>
+
+      <h1 class="text-slate-950 text-[clamp(2.2rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-tight mb-6">
+        Panduan Lulus PTE Academic: Strategi dan Tips Sukses
+      </h1>
+
+      <p class="text-[1.15rem] text-slate-600 font-medium leading-relaxed border-l-4 border-teal-500 pl-5 my-6 bg-slate-50/50 py-3 pr-4 rounded-r-xl">
+        Semangat persiapan ujian PTE Academic dengan strategi efektif dan terukur untuk mencapai target skor impian Anda secara efisien.
+      </p>
+    </div>
+  </header>
+
+  <!-- ── CINEMATIC WIDE COVER IMAGE ── -->
+  <div class="max-w-[1140px] mx-auto px-6 lg:px-8 mb-16">
+    <div class="relative w-full h-[320px] sm:h-[460px] md:h-[520px] rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(15,23,42,0.08)]">
+      <img 
+        src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+        class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" 
+        alt="PTE Preparation Class" 
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent"></div>
+    </div>
+  </div>
+
+  <!-- ── MAIN CONTENT & STICKY SIDEBAR SPLIT GRID ── -->
+  <main class="max-w-[1140px] mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-16 items-start">
+      
+      <!-- COLUMN 1: RICH TEXT ARTICLE CONTENT -->
+      <article class="text-slate-800 text-[1.08rem] leading-[1.8] space-y-10 font-normal">
+        
+        <!-- Section 1 -->
+        <section class="group">
+          <h2 class="text-slate-950 text-[1.55rem] font-black tracking-tight mb-4 flex items-center gap-3">
+            <span class="w-1.5 h-6 bg-teal-500 rounded-full inline-block transition-transform duration-300 group-hover:scale-y-120"></span>
+            Mengaporitkan PTE Academic?
+          </h2>
+          <p class="text-slate-600">
+            PTE Academic adalah ujian kemampuan bahasa Inggris berbasis komputer yang diakui secara global untuk keperluan studi, kerja, dan migrasi resmi. Hasil akurat yang keluar dalam hitungan hari membuat skor PTE kini diterima dengan sangat hangat oleh ribuan institusi bonafide di Australia, UK, Selandia Baru, dan belahan negara maju lainnya.
+          </p>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="group">
+          <h2 class="text-slate-950 text-[1.55rem] font-black tracking-tight mb-4 flex items-center gap-3">
+            <span class="w-1.5 h-6 bg-teal-500 rounded-full inline-block transition-transform duration-300 group-hover:scale-y-120"></span>
+            Strategi Persiapan Efektif
+          </h2>
+          <p class="text-slate-600 mb-6">
+            Riset kami membuktikan bahwa persiapan yang terarah jauh lebih penting daripada belajar berjam-jam tanpa peta instruksi. Berikut adalah strategi baku yang terbukti sukses meloloskan ratusan alumni kami:
+          </p>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100/80 hover:border-teal-500/20 hover:bg-teal-50/20 transition-all duration-300">
+              <div class="w-8 h-8 rounded-lg bg-teal-500 text-white flex items-center justify-center font-bold text-sm mb-3">01</div>
+              <h4 class="text-slate-950 font-bold text-[1rem] mb-1">Pahami Format Ujian</h4>
+              <p class="text-slate-500 text-[0.88rem] leading-relaxed">Pelajari menyeluruh algoritma penilaian sistem soal (Speaking, Writing, Reading, Listening).</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100/80 hover:border-teal-500/20 hover:bg-teal-50/20 transition-all duration-300">
+              <div class="w-8 h-8 rounded-lg bg-teal-500 text-white flex items-center justify-center font-bold text-sm mb-3">02</div>
+              <h4 class="text-slate-950 font-bold text-[1rem] mb-1">Simulasi Rutin</h4>
+              <p class="text-slate-500 text-[0.88rem] leading-relaxed">Luangkan 1-2 jam latihan harian adaptif menggunakan software simulasi yang akurat.</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100/80 hover:border-teal-500/20 hover:bg-teal-50/20 transition-all duration-300">
+              <div class="w-8 h-8 rounded-lg bg-teal-500 text-white flex items-center justify-center font-bold text-sm mb-3">03</div>
+              <h4 class="text-slate-950 font-bold text-[1rem] mb-1">Akumulasi Kosakata</h4>
+              <p class="text-slate-500 text-[0.88rem] leading-relaxed">Kuasai minimal 3.000 korpus kosakata akademis esensial yang kerap muncul di lembar ujian.</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100/80 hover:border-teal-500/20 hover:bg-teal-50/20 transition-all duration-300">
+              <div class="w-8 h-8 rounded-lg bg-teal-500 text-white flex items-center justify-center font-bold text-sm mb-3">04</div>
+              <h4 class="text-slate-950 font-bold text-[1rem] mb-1">Evaluasi Pengucapan</h4>
+              <p class="text-slate-500 text-[0.88rem] leading-relaxed">Rekam lafal pembicaraan Anda secara mandiri untuk menelaah intonasi dan kejelasan artikulasi.</p>
+            </div>
+
+            
+          </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="group">
+          <h2 class="text-slate-950 text-[1.55rem] font-black tracking-tight mb-4 flex items-center gap-3">
+            <span class="w-1.5 h-6 bg-teal-500 rounded-full inline-block transition-transform duration-300 group-hover:scale-y-120"></span>
+            Tips Taktis Tiap Bagian
+          </h2>
+          <ul class="space-y-3.5 mt-4">
+            <li class="flex gap-3 items-start bg-slate-50/40 p-4 rounded-xl border border-slate-100">
+              <span class="w-2 h-2 rounded-full bg-teal-500 mt-2.5 shrink-0"></span>
+              <p class="text-slate-600 text-[0.98rem]"><strong class="text-slate-950 font-bold">Speaking:</strong> Berbicaralah dengan ketukan tempo yang konisten, natural, dan percaya diri tinggi. Hindari jeda terlalu panjang.</p>
+            </li>
+            <li class="flex gap-3 items-start bg-slate-50/40 p-4 rounded-xl border border-slate-100">
+              <span class="w-2 h-2 rounded-full bg-teal-500 mt-2.5 shrink-0"></span>
+              <p class="text-slate-600 text-[0.98rem]"><strong class="text-slate-950 font-bold">Writing:</strong> Pastikan Anda menggunakan pakem esai baku yang rapi yang memuat elemen introduction, body argumentasi, dan kesimpulan tegas.</p>
+            </li>
+            <li class="flex gap-3 items-start bg-slate-50/40 p-4 rounded-xl border border-slate-100">
+              <span class="w-2 h-2 rounded-full bg-teal-500 mt-2.5 shrink-0"></span>
+              <p class="text-slate-600 text-[0.98rem]"><strong class="text-slate-950 font-bold">Reading:</strong> Disiplin dalam memantau sisa manajemen waktu, hindari membuang menit berharga hanya karena terpaku pada satu butir soal pelik.</p>
+            </li>
+            <li class="flex gap-3 items-start bg-slate-50/40 p-4 rounded-xl border border-slate-100">
+              <span class="w-2 h-2 rounded-full bg-teal-500 mt-2.5 shrink-0"></span>
+              <p class="text-slate-600 text-[0.98rem]"><strong class="text-slate-950 font-bold">Listening:</strong> Pertajam fokus pendengaran Anda sejak detik pertama instrumen berbunyi, buat catatan kecil poin-poin krusial.</p>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="group">
+          <h2 class="text-slate-950 text-[1.55rem] font-black tracking-tight mb-4 flex items-center gap-3">
+            <span class="w-1.5 h-6 bg-teal-500 rounded-full inline-block transition-transform duration-300 group-hover:scale-y-120"></span>
+            Proyeksi Target Skor Realistis
+          </h2>
+          <p class="text-slate-600">
+            Berdasarkan matriks data bimbingan internal kami, para kandidat yang melangsungkan sesi simulasi intensif selama kurun waktu 2 bulan kalender secara konsisten mengalami lonjakan akumulasi skor rata-rata berkisar antara 15 hingga 20 poin penuh. Kesuksesan tersebut bukan hal magis, melainkan buah kedisiplinan skema belajar terarah.
+          </p>
+        </section>
+
+        <!-- Back Button -->
+        <div class="pt-10 border-t border-slate-100 mt-12">
+          <a href="#" class="group inline-flex items-center gap-2.5 text-teal-600 hover:text-teal-700 font-extrabold text-[0.92rem] uppercase tracking-wider transition-all duration-200">
+            <svg class="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/>
+            </svg>
+            Kembali ke Daftar Artikel
+          </a>
+        </div>
+
+      </article>
+
+      <!-- COLUMN 2: STICKY SHARING SIDEBAR -->
+      <aside class="hidden lg:block lg:sticky lg:top-28 bg-slate-50/80 border border-slate-100 p-6 rounded-[24px]">
+        <h3 class="text-slate-950 text-[0.82rem] font-black uppercase tracking-widest mb-4 pb-3 border-b border-slate-200/60">
+          Aksi Artikel
+        </h3>
+        <p class="text-slate-500 text-xs leading-relaxed mb-4">Informasi ini bermanfaat? Bantu kolega Anda menemukan panduan terbaik dengan membagikan tautan ini.</p>
+        
+        <div class="flex flex-col gap-2.5">
+          <a href="#" class="flex items-center gap-3 w-full px-4 py-2.5 bg-white border border-slate-200/80 rounded-xl text-[0.88rem] font-bold text-slate-700 hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200/50 transition-all duration-200 group" aria-label="Share Facebook">
+            <svg class="w-4 h-4 fill-current text-slate-400 group-hover:text-blue-600" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Facebook
+          </a>
+          <a href="#" class="flex items-center gap-3 w-full px-4 py-2.5 bg-white border border-slate-200/80 rounded-xl text-[0.88rem] font-bold text-slate-700 hover:bg-sky-50 hover:text-sky-600 hover:border-sky-200/50 transition-all duration-200 group" aria-label="Share Twitter">
+            <svg class="w-4 h-4 fill-current text-slate-400 group-hover:text-sky-600" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            Twitter
+          </a>
+          <a href="#" class="flex items-center gap-3 w-full px-4 py-2.5 bg-white border border-slate-200/80 rounded-xl text-[0.88rem] font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-600 hover:border-teal-200/50 transition-all duration-200 group" aria-label="Copy Link">
+            <svg class="w-4 h-4 fill-none stroke-current stroke-2 text-slate-400 group-hover:text-teal-600" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+            Salin Tautan
+          </a>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer class="bg-[#172543] relative text-white pt-20 pb-0 border-t border-[#1e293b] overflow-hidden">
+  
+  <!-- BACKGROUND PETA DUNIA (MENGGANTIKAN footer::before) -->
+  <div class="absolute inset-0 opacity-5 bg-[url('https://upload.wikimedia.org/wikipedia/commons/4/41/Simple_world_map.svg')] bg-no-repeat bg-cover bg-center pointer-events-none z-1 hidden lg:block"></div>
+  
+  <!-- FOOTER INNER CONTAINER -->
+  <div class="max-w-[1200px] mx-auto px-8 relative z-2">
+    
+    <!-- FOOTER GRID (3 Kolom di Desktop, 1 Kolom di Tablet/Mobile) -->
+    <div class="grid grid-cols-1 lg:grid-cols-[1.3fr_1.2fr_1.5fr] gap-16 pb-16">
+      
+      <!-- KOLOM 1: Brand & Deskripsi -->
+      <div>
+        <!-- Logo Wrap -->
+        <a href="#hero" class="inline-flex items-center gap-3 no-underline mb-6">
+          <div class="w-[60px] h-[60px] rounded-[10px] bg-white flex items-center justify-center overflow-hidden">
+            <img src="./Untitled_design__5_-removebg-preview.png" class="w-full h-full object-contain" alt="Logo Hafiza Edukasi">
+          </div>
+          <div class="flex flex-col justify-center">
+            <p class="font-bold text-[1.2rem] text-white Combined-line-height leading-[1.2] tracking-[0.03em]">Hafiza Edukasi</p>
+            <p class="text-[0.85rem] font-semibold text-[var(--custom-teal)] leading-[1.2]">Ekselensia</p>
+          </div>
+        </a>
+        <p class="text-[#94a3b8] text-[0.92rem] leading-[1.7] mb-8">
+          PT. Hafiza Edukasi Ekselensia — Ekosistem pendidikan terintegrasi yang mempersiapkan Indonesia bersaing secara global.
+        </p>
+        <a href="#services" class="inline-flex items-center px-[1.6rem] py-[0.7rem] bg-white text-[#0f172a] text-[0.88rem] font-bold no-underline rounded-[4px] transition-colors duration-200 hover:bg-[var(--gray-100)]">
+          Selengkapnya
+        </a>
+      </div>
+      
+      <!-- KOLOM 2: Kontak -->
+      <div class="flex flex-col">
+        <h3 class="text-[1.4rem] font-bold text-white mb-8 tracking-[0.02em]">Kontak</h3>
+        <div class="flex flex-col gap-6">
+          <!-- Alamat -->
+          <div class="flex gap-5 items-center">
+            <div class="text-white shrink-0 flex items-center justify-center">
+              <svg class="w-6 h-6 fill-none stroke-current stroke-[1.8]" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <p class="text-[#e2e8f0] text-[0.95rem] leading-[1.5]">Jl. Dahlia III No. 150 B, Depok Jaya,<br>Kota Depok, Jawa Barat</p>
+          </div>
+          <!-- Bisnis -->
+          <div class="flex gap-5 items-center">
+            <div class="text-white shrink-0 flex items-center justify-center">
+              <svg class="w-6 h-6 fill-none stroke-current stroke-[1.8]" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 012 1.18 2 2 0 014 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14v2.92z"/></svg>
+            </div>
+            <p class="text-[#e2e8f0] text-[0.95rem] leading-[1.5]">Dream High Course & Consulting</p>
+          </div>
+          <!-- Email -->
+          <div class="flex gap-5 items-center">
+            <div class="text-white shrink-0 flex items-center justify-center">
+              <svg class="w-6 h-6 fill-none stroke-current stroke-[1.8]" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <p class="text-[#e2e8f0] text-[0.95rem] leading-[1.5]">info@hafizaedukasi.id</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- KOLOM 3: Navigasi -->
+      <div class="flex flex-col">
+        <h3 class="text-[1.4rem] font-bold text-white mb-8 tracking-[0.02em]">Navigasi</h3>
+        <div class="grid grid-cols-2 gap-4 lg:gap-8">
+          <ul class="list-none p-0 m-0 flex flex-col gap-[1.2rem]">
+            <li>
+              <a href="#hero" class="group/link text-[0.88rem] font-bold text-[#e2e8f0] no-underline transition-all duration-200 inline-flex items-center tracking-[0.04em] uppercase hover:text-[var(--custom-teal)] hover:tracking-[0.08em]">
+                → Home
+              </a>
+            </li>
+            <li>
+              <a href="#services" class="group/link text-[0.88rem] font-bold text-[#e2e8f0] no-underline transition-all duration-200 inline-flex items-center tracking-[0.04em] uppercase hover:text-[var(--custom-teal)] hover:tracking-[0.08em]">
+                → Layanan
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="group/link text-[0.88rem] font-bold text-[#e2e8f0] no-underline transition-all duration-200 inline-flex items-center tracking-[0.04em] uppercase hover:text-[var(--custom-teal)] hover:tracking-[0.08em]">
+                → Kontak
+              </a>
+            </li>
+          </ul>
+          <ul class="list-none p-0 m-0 flex flex-col gap-[1.2rem]">
+            <li>
+              <a href="#about" class="group/link text-[0.88rem] font-bold text-[#e2e8f0] no-underline transition-all duration-200 inline-flex items-center tracking-[0.04em] uppercase hover:text-[var(--custom-teal)] hover:tracking-[0.08em]">
+                → Tentang Kami
+              </a>
+            </li>
+            <li>
+              <a href="#artikel" class="group/link text-[0.88rem] font-bold text-[#e2e8f0] no-underline transition-all duration-200 inline-flex items-center tracking-[0.04em] uppercase hover:text-[var(--custom-teal)] hover:tracking-[0.08em]">
+                → Artikel
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- FOOTER BOTTOM (Hak Cipta & Sosmed) -->
+    <div class="border-t border-[#1e293b] py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+      <p class="text-[0.88rem] text-[#64748b] font-medium">
+        &copy; <span id="yr"></span> PT. Hafiza Edukasi Ekselensia.
+      </p>
+      <div class="flex gap-[1.25rem]">
+        <!-- Instagram -->
+        <a href="#" aria-label="Instagram" class="text-white transition-colors duration-200 hover:text-[var(--custom-teal)] flex items-center">
+          <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <!-- WhatsApp -->
+        <a href="#" aria-label="WhatsApp" class="text-white transition-colors duration-200 hover:text-[var(--custom-teal)] flex items-center">
+          <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        </a>
+        <!-- TikTok -->
+        <a href="#" aria-label="TikTok" class="text-white transition-colors duration-200 hover:text-[var(--custom-teal)] flex items-center">
+          <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/></svg>
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</footer>
+  
+</body>
+
+<script>
+const yrEl = document.getElementById('yr');
+  if (yrEl) yrEl.textContent = new Date().getFullYear();
+
+  // Scrolled navbar style (Opsional jika Anda ingin memberi efek saat di-scroll)
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+      navbar.classList.add('bg-white', 'shadow-md');
+      navbar.classList.remove('bg-white/97');
+    } else {
+      navbar.classList.remove('bg-white', 'shadow-md');
+      navbar.classList.add('bg-white/97');
+    }
+  });
+
+  // Ambil elemen hamburger dan mobile menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  // Toggle Hamburger & Mobile Menu
+  hamburger.addEventListener('click', () => {
+    // Saling tukar antara 'hidden' dan 'flex'
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+  });
+
+  // Fungsi menutup menu mobile secara keseluruhan
+  function closeMenu() {
+    mobileMenu.classList.add('hidden');
+    mobileMenu.classList.remove('flex');
+    
+    // Reset submenu mobile ke kondisi tertutup
+    const sub = document.getElementById('mobileSubmenu');
+    const chevIcon = document.querySelector('#mobileLayananToggle .class-chev-icon');
+    
+    if (sub) {
+      sub.classList.add('hidden');
+      sub.classList.remove('flex');
+    }
+    if (chevIcon) {
+      chevIcon.classList.remove('rotate-180');
+    }
+  }
+
+  // Toggle Submenu Layanan di Mobile
+  function toggleMobileSubmenu() {
+    const sub = document.getElementById('mobileSubmenu');
+    const chevIcon = document.querySelector('#mobileLayananToggle .class-chev-icon');
+    
+    // Saling tukar status hidden dan flex pada submenu
+    sub.classList.toggle('hidden');
+    sub.classList.toggle('flex');
+    
+    // Putar icon chevron menggunakan class bawaan Tailwind
+    if (chevIcon) {
+      chevIcon.classList.toggle('rotate-180');
+    }
+  }
+  // Typing effect
+// Copy-paste 3 baris layanan baru ini ke dalam array script mengetik Bos:
+const words = [
+  "Pelatihan SDM & Korporat",
+  "Bimbingan Beasiswa Global",
+  "Pendidikan Vokasi & Bisnis"
+];
+  let wordIndex = 0, charIndex = 0, isDeleting = false;
+  const typingTextElement = document.getElementById("typing-text");
+
+  function typeEffect() {
+    const currentWord = words[wordIndex];
+    if (isDeleting) {
+      typingTextElement.innerText = currentWord.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      typingTextElement.innerText = currentWord.substring(0, charIndex + 1);
+      charIndex++;
+    }
+    let speed = isDeleting ? 30 : 50;
+    if (!isDeleting && charIndex === currentWord.length) { speed = 1500; isDeleting = true; }
+    else if (isDeleting && charIndex === 0) { isDeleting = false; wordIndex = (wordIndex + 1) % words.length; speed = 200; }
+    setTimeout(typeEffect, speed);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    typingTextElement.innerText = "";
+    setTimeout(typeEffect, 300);
+  });
+</script>
+
+</html>

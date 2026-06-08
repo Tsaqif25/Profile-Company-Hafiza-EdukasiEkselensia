@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- ── PREMIUM UNIFIED NAVBAR (100% PURE TAILWIND CSS & LIGHT MODE) ── -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-[100] bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-[0_2px_20px_rgba(15,23,42,0.04)] transition-all duration-300">
+  <div class="max-w-[1200px] mx-auto px-6 md:px-8 flex items-center justify-between h-[76px]">
+    
+    <!-- BRAND LOGO & IDENTITY -->
+    <a href="#hero" class="inline-flex items-center gap-3 no-underline group">
+      <div class="relative h-12 w-auto flex items-center justify-center overflow-hidden">
+        <img src="./Untitled_design__5_-removebg-preview.png" class="h-12 w-auto object-contain block transform group-hover:scale-105 transition-transform duration-300" alt="Logo Hafiza Edukasi">
+      </div>
+      <div class="flex flex-col justify-center">
+        <span class="font-sans text-[1.2rem] font-black text-slate-950 leading-none tracking-tight">Hafiza Edukasi</span>
+        <span class="font-sans text-[0.85rem] font-bold text-teal-600 leading-none mt-1 tracking-wide uppercase">Ekselensia</span>
+      </div>
+    </a>
+
+    <!-- DESKTOP NAVIGATION (Hidden on Mobile) -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#hero" class="text-[0.875rem] font-semibold text-slate-600 hover:text-teal-600 no-underline transition-colors duration-200">Beranda</a>
+      <a href="#about" class="text-[0.875rem] font-semibold text-slate-600 hover:text-teal-600 no-underline transition-colors duration-200">Tentang Kami</a>
+
+      <!-- Dropdown Layanan (Desktop) -->
+      <div class="relative group h-[76px] flex items-center">
+        <button class="inline-flex items-center gap-1.5 text-[0.875rem] font-semibold text-slate-600 group-hover:text-teal-600 transition-colors duration-200 bg-transparent border-none cursor-pointer focus:outline-none">
+          Layanan
+          <svg class="w-3.5 h-3.5 fill-none stroke-current stroke-[2.5] transition-transform duration-300 group-hover:rotate-180" viewBox="0 0 24 24">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        
+        <!-- Floating Dropdown Panel -->
+        <div class="absolute top-[76px] left-1/2 -translate-x-1/2 min-w-[320px] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-[200]">
+          <div class="mt-2 bg-white border border-slate-100 rounded-2xl shadow-[0_20px_50px_rgba(15,23,42,0.12)] p-2">
+            
+            <!-- Item 1 -->
+            <a href="#services" class="flex items-start gap-3.5 p-3 rounded-xl no-underline hover:bg-slate-50 transition-colors duration-200 group/item">
+              <div class="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-gradient-to-br from-sky-500 to-blue-600 shadow-sm shadow-blue-500/20">
+                <svg class="w-4 h-4 fill-none stroke-white stroke-2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 012 1.18 2 2 0 014 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14v2.92z"/></svg>
+              </div>
+              <div>
+                <div class="font-bold text-[0.875rem] text-slate-900 group-hover/item:text-teal-600 transition-colors">Dream High Course</div>
+                <p class="text-[0.75rem] text-slate-500 mt-0.5 leading-normal">Pelatihan &amp; konsultasi global bertaraf internasional.</p>
+              </div>
+            </a>
+            
+            <!-- Item 2 -->
+            <a href="#services" class="flex items-start gap-3.5 p-3 rounded-xl no-underline hover:bg-slate-50 transition-colors duration-200 group/item">
+              <div class="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-gradient-to-br from-amber-500 to-orange-600 shadow-sm shadow-orange-500/20">
+                <svg class="w-4 h-4 fill-none stroke-white stroke-2" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+              </div>
+              <div>
+                <div class="font-bold text-[0.875rem] text-slate-900 group-hover/item:text-teal-600 transition-colors">Nara Excellent Academy</div>
+                <p class="text-[0.75rem] text-slate-500 mt-0.5 leading-normal">Bimbingan belajar adaptif &amp; kurikulum personal.</p>
+              </div>
+            </a>
+            
+            <!-- Item 3 -->
+            <a href="#services" class="flex items-start gap-3.5 p-3 rounded-xl no-underline hover:bg-slate-50 transition-colors duration-200 group/item">
+              <div class="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-gradient-to-br from-teal-500 to-cyan-600 shadow-sm shadow-teal-500/20">
+                <svg class="w-4 h-4 fill-none stroke-white stroke-2" viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+              </div>
+              <div>
+                <div class="font-bold text-[0.875rem] text-slate-900 group-hover/item:text-teal-600 transition-colors">Hafiza Edu Research</div>
+                <p class="text-[0.75rem] text-slate-500 mt-0.5 leading-normal">Riset saintifik &amp; pelatihan pengidik profesional.</p>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+
+      <a href="#contact" class="text-[0.875rem] font-semibold text-slate-600 hover:text-teal-600 no-underline transition-colors duration-200">Artikel</a>
+      <a href="#contact-hero-premium" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-bold text-[0.875rem] no-underline shadow-[0_4px_14px_rgba(13,148,136,0.25)] hover:shadow-[0_6px_20px_rgba(13,148,136,0.4)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-200">Hubungi Kami</a>
+    </div>
+
+    <!-- HAMBURGER BUTTON (Mobile Only) -->
+    <button class="md:hidden flex flex-col justify-center items-center gap-[5px] w-10 h-10 cursor-pointer bg-slate-50 border border-slate-100 rounded-xl focus:outline-none transition-colors duration-200" id="hamburger" aria-label="Menu" onclick="toggleMobileMenu()">
+      <span class="block w-5 h-0.5 rounded-full bg-slate-700 transition-all duration-300 origin-center" id="nav-line-1"></span>
+      <span class="block w-5 h-0.5 rounded-full bg-slate-700 transition-all duration-300 origin-center" id="nav-line-2"></span>
+      <span class="block w-5 h-0.5 rounded-full bg-slate-700 transition-all duration-300 origin-center" id="nav-line-3"></span>
+    </button>
+  </div>
+
+  <!-- MOBILE MENU PANEL (Smooth Dropdown) -->
+  <div class="hidden max-h-0 opacity-0 overflow-hidden md:hidden flex-col bg-white border-t border-slate-100 transition-all duration-300 ease-in-out shadow-[0_15px_30px_rgba(15,23,42,0.06)]" id="mobileMenu">
+    <div class="px-6 py-5 flex flex-col gap-2">
+      <a href="#hero" class="text-[0.95rem] font-bold text-slate-700 no-underline py-2.5 px-3 rounded-xl hover:bg-slate-50 hover:text-teal-600 transition-all" onclick="closeMenu()">Beranda</a>
+      <a href="#about" class="text-[0.95rem] font-bold text-slate-700 no-underline py-2.5 px-3 rounded-xl hover:bg-slate-50 hover:text-teal-600 transition-all" onclick="closeMenu()">Tentang Kami</a>
+
+      <!-- Mobile Submenu Layanan Dropdown -->
+      <div class="w-full">
+        <button class="flex items-center justify-between text-[0.95rem] font-bold text-slate-700 py-2.5 px-3 rounded-xl hover:bg-slate-50 hover:text-teal-600 transition-all border-none bg-transparent w-full text-left cursor-pointer focus:outline-none" onclick="toggleMobileSubmenu()">
+          Layanan
+          <svg class="w-4 h-4 fill-none stroke-current stroke-[2.5] transition-transform duration-300" id="mobileSubmenuIcon" viewBox="0 0 24 24">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        
+        <div class="hidden flex-col gap-1 pl-6 mt-1 overflow-hidden transition-all duration-300" id="mobileSubmenu">
+          <a href="#services" class="flex items-center gap-2.5 text-[0.875rem] font-semibold text-slate-600 py-2 px-3 rounded-lg no-underline hover:text-teal-600 hover:bg-teal-50/50" onclick="closeMenu()">
+            <span class="w-2 h-2 rounded-full inline-block shrink-0 bg-sky-500"></span>
+            Dream High Course &amp; Consulting
+          </a>
+          <a href="#services" class="flex items-center gap-2.5 text-[0.875rem] font-semibold text-slate-600 py-2 px-3 rounded-lg no-underline hover:text-teal-600 hover:bg-teal-50/50" onclick="closeMenu()">
+            <span class="w-2 h-2 rounded-full inline-block shrink-0 bg-orange-500"></span>
+            Nara Excellent Academy
+          </a>
+          <a href="#services" class="flex items-center gap-2.5 text-[0.875rem] font-semibold text-slate-600 py-2 px-3 rounded-lg no-underline hover:text-teal-600 hover:bg-teal-50/50" onclick="closeMenu()">
+            <span class="w-2 h-2 rounded-full inline-block shrink-0 bg-teal-500"></span>
+            Hafiza Edu Research &amp; Training
+          </a>
+        </div>
+      </div>
+
+      <a href="#contact" class="text-[0.95rem] font-bold text-slate-700 no-underline py-2.5 px-3 rounded-xl hover:bg-slate-50 hover:text-teal-600 transition-all" onclick="closeMenu()">Kontak</a>
+      
+      <div class="pt-4 border-t border-slate-100 mt-2">
+        <a href="#contact-hero-premium" class="block text-center w-full py-3 rounded-xl bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-bold text-[0.9rem] no-underline shadow-md shadow-teal-600/10" onclick="closeMenu()">Hubungi Kami</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ── JAVASCRIPT LOGIC FOR INTERACTION (Taruh sebelum tag </body>) ── -->
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    const l1 = document.getElementById('nav-line-1');
+    const l2 = document.getElementById('nav-line-2');
+    const l3 = document.getElementById('nav-line-3');
+    
+    if (menu.classList.contains('hidden')) {
+      // Buka Menu
+      menu.classList.remove('hidden');
+      setTimeout(() => {
+        menu.classList.remove('opacity-0', 'max-h-0');
+        menu.classList.add('opacity-100', 'max-h-[500px]');
+      }, 10);
+      
+      // Animasi Hamburger Jadi 'X'
+      l1.classList.add('transform', 'rotate-45', 'translate-y-2');
+      l2.classList.add('opacity-0');
+      l3.classList.add('transform', '-rotate-45', '-translate-y-1.5');
+    } else {
+      closeMenu();
+    }
+  }
+
+  function closeMenu() {
+    const menu = document.getElementById('mobileMenu');
+    const l1 = document.getElementById('nav-line-1');
+    const l2 = document.getElementById('nav-line-2');
+    const l3 = document.getElementById('nav-line-3');
+    
+    menu.classList.remove('opacity-100', 'max-h-[500px]');
+    menu.classList.add('opacity-0', 'max-h-0');
+    
+    // Kembalikan Hamburger asli
+    l1.classList.remove('transform', 'rotate-45', 'translate-y-2');
+    l2.classList.remove('opacity-0');
+    l3.classList.remove('transform', '-rotate-45', '-translate-y-1.5');
+    
+    setTimeout(() => {
+      menu.classList.add('hidden');
+    }, 300);
+  }
+
+  function toggleMobileSubmenu() {
+    const submenu = document.getElementById('mobileSubmenu');
+    const icon = document.getElementById('mobileSubmenuIcon');
+    
+    if (submenu.classList.contains('hidden')) {
+      submenu.classList.remove('hidden');
+      submenu.classList.add('flex');
+      icon.classList.add('rotate-180');
+    } else {
+      submenu.classList.remove('flex');
+      submenu.classList.add('hidden');
+      icon.classList.remove('rotate-180');
+    }
+  }
+
+  // Efek Blur Navbar saat di-Scroll
+  window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 20) {
+      navbar.classList.add('shadow-[0_4px_30px_rgba(15,23,42,0.08)]', 'bg-white/98');
+    } else {
+      navbar.classList.remove('shadow-[0_4px_30px_rgba(15,23,42,0.08)]');
+    }
+  });
+</script>
+</body>
+</html>
